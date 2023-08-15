@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href="style.css" />
+    <title>&lt;FZ&sol;&gt; Zahrah | Portfolio</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <nav class="nav center">
+        <div class="nav__header">
+          <a href="#home" class="nav__brand">&lt;FZ&sol;&gt;</a>
+          <ul class="nav__links">
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+          </ul>
+          <span class="nav__hamburger" id="hamburger"></span>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="sidebar">
+      <ul class="sidebar__links">
+        <li><a href="#home" class="sidebar__link" data-id="home">Home</a></li>
+        <li>
+          <a href="#projects" class="sidebar__link" data-id="projects"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="sidebar__link" data-id="about">About</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <!-- hero section-->
+      <section class="hero" id="home">
+        <article class="hero__container center">
+          <p class="hero__subheading">Fatemah Az Zahrah</p>
+          <h1 class="hero__heading">
+            <div class="hero__list">
+              <span>F</span>
+              <span>r</span>
+              <span>o</span>
+              <span>n</span>
+              <span>t</span>
+              <span>-</span>
+              <span>E</span>
+              <span>n</span>
+              <span>d</span>
+              <span>&nbsp;</span>
+            </div>
+            <div class="hero__list">
+              <span>D</span>
+              <span>e</span>
+              <span>v</span>
+              <span>e</span>
+              <span>l</span>
+              <span>o</span>
+              <span>p</span>
+              <span>e</span>
+              <span>r</span>
+            </div>
+          </h1>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn hero__btn--primary">Projects</a>
+          </div>
+
+          <ul class="contact__links center">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/natasha--johnson/"
+                target="_blank"
+                class="contact__link"
+                rel="noopener"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/artsycoder533"
+                target="_blank"
+                class="contact__link"
+                rel="noopener"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/artsycoder"
+                target="_blank"
+                class="contact__link"
+                rel="noopener"
+                ><i class="fab fa-codepen"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCOGjYAACGwNLzYcTpXnvZ_Q"
+                target="_blank"
+                class="contact__link"
+                rel="noopener"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- projects section -->
+      <section class="projects" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <article class="projects__container center">
+
+          <div class="projects__card">
+            <div class="projects__image">
+              <img src="./1stthird_desktop.png" alt="1st & Third" class="img" />
+            </div>
+            <div class="projects__text">
+              <h3 class="projects__title">1st & Third</h3>
+              <p class="projects__description">
+                1st & Third is a React E-Commerce website where the user can browse and filter products pulled from the Fake Store API based on category, price, and customer rating, sort products based on price and item name, and add/update products in the cart. The user is then able to checkout by filling in their contact information in the checkout form with added form validation.  I utilized the Context API paired with reducers for global state management.
+              </p>
+              <p class="projects__stack">
+                Built With: React, React Router v6, Context API, Fake Store API,
+                Hooks and Styled Components
+              </p>
+              <div class="project__buttons">
+                <a
+                  href="https://artsycoder533.github.io/1st-Third/"
+                  target="_blank"
+                  class="btn project__btn--primary"
+                  type="button"
+                  aria-label="1st & Third Live Site"
+                  rel="noopener"
+                  >Live Site</a
+                >
+                <a
+                  href="https://www.youtube.com/playlist?list=PL2WqH02famSU0LDxXBtOHKcplOsu6QYqE"
+                  class="btn project__btn--secondary"
+                  rel="noopener no-referrer"
+                  target="_blank"
+                  >Video Demo</a
+                >
+                <a
+                  href="https://github.com/artsycoder533/1st-Third.git"
+                  target="_blank"
+                  class="btn project__btn--secondary"
+                  type="button"
+                  aria-label="Link to Github Repository for 1st & Third"
+                  rel="noopener"
+                  >See Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__card">
+            <div class="projects__image">
+              <img src="./productiv_desktop.png" alt="Productiv" class="img" />
+            </div>
+            <div class="projects__text">
+              <h3 class="projects__title">Productiv</h3>
+              <p class="projects__description">
+                Productiv is a dashboard application that solves the problem of having to switch between multiple applications to maintain productivity. A user is able to add tasks organized by project type as well as date. To aid the user in keeping deadlines, tasks are automatically added to the inbox that are due the current day. Productiv also includes widgets such as a Pomodoro Timer and calculator.
+              </p>
+              <p class="projects__stack">
+                Built With: Html, Css/Sass, Vanilla JavaScript, Webpack 5, Quotes API, Firebase Firestore, and Firebase Authentication
+              </p>
+              <div class="project__buttons">
+                <a
+                  href="https://artsycoder533.github.io/productiv/"
+                  target="_blank"
+                  class="btn project__btn--primary"
+                  type="button"
+                  aria-label="Productiv Live Site"
+                  rel="noopener"
+                  >Live Site</a
+                >
+                <a
+                  href="https://youtube.com/playlist?list=PL2WqH02famSWoIjSa2kHPvw6u7Qzsmshx"
+                  class="btn project__btn--secondary"
+                  rel="noopener no-referrer"
+                  target="_blank"
+                  >Video Demo</a
+                >
+                <a
+                  href="https://github.com/artsycoder533/productiv.git"
+                  target="_blank"
+                  class="btn project__btn--secondary"
+                  type="button"
+                  aria-label="Link to Github Repository for Productiv"
+                  rel="noopener"
+                  >See Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__card">
+            <div class="projects__image">
+              <img src="./desktop-after.png" alt="Productiv" class="img" />
+            </div>
+            <div class="projects__text">
+              <h3 class="projects__title">Visions of Hope Psychological Services, LLC "Re-skin" (Freelance)</h3>
+              <p class="projects__description">
+                This is a "re-skin" for a previous freelance website I built for Visions of Hope Psychological Services, LLC. They are a local private practice based in Richmond, Virginia that needed to create their online presence as well as generate leads and provide current and potential clients with a space to learn more information about their private practice. They changed their logo and wanted a new look for their site that would compliment it. To allow for future additions/upgrades I decided to build this using Next.js to accomodate a possible addition of a blog in the future.
+              </p>
+              <p class="projects__stack">
+                Built With: Next.js & Styled Components
+              </p>
+              <div class="project__buttons">
+                <a
+                  href="https://visionsofhope-va.com/"
+                  target="_blank"
+                  class="btn project__btn--primary"
+                  type="button"
+                  aria-label="Visions of Hope Psychological Services, LLC Live Site"
+                  rel="noopener"
+                  >Live Site</a
+                >
+                <a
+                  href="https://youtube.com/playlist?list=PL2WqH02famSXn-kLKfiJ-sjaZ2q8SXWbs"
+                  class="btn project__btn--secondary"
+                  rel="noopener no-referrer"
+                  target="_blank"
+                  >Video Demo</a
+                >
+                <a
+                  href="https://github.com/artsycoder533/vohps-next.git"
+                  target="_blank"
+                  class="btn project__btn--secondary"
+                  type="button"
+                  aria-label="Link to Github Repository for Visions of Hope Psychological Services, LLC Reskin"
+                  rel="noopener"
+                  >See Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__card">
+            <div class="projects__image">
+              <img
+                src="./atlas_desktop.png"
+                alt="Atlas Behavioral Health and Wellness Homepage"
+                class="img"
+              />
+            </div>
+            <div class="projects__text">
+              <h3 class="projects__title">
+                Atlas Behavioral Health + Wellness (Freelance)
+              </h3>
+              <p class="projects__description">
+                This is a multi-page static website that I built for Atlas
+                Behavioral Health + Wellness, a mental health private practice
+                based in North Chesterfield, Virginia. They are in the process
+                of opening their private practice and were in need of a website
+                to attract new clients, allow new and existing clients to
+                schedule appointments as well as offer information about their
+                company.
+              </p>
+              <p class="projects__stack">Built With: HTML5, CSS3, JavaScript</p>
+              <div class="project__buttons">
+                <a
+                  href="https://www.atlasbhw.com"
+                  target="_blank"
+                  class="btn project__btn--primary"
+                  type="button"
+                  aria-label="Link to Atlas Behavioral Health & Wellness Live Site"
+                  rel="noopener"
+                  >Live Site</a
+                >
+                <a
+                  href="https://youtu.be/vayuWRdryeM"
+                  class="btn project__btn--secondary"
+                  rel="noopener no-referrer"
+                  target="_blank"
+                  >Video Demo</a
+                >
+                <a
+                  href="https://github.com/artsycoder533/atlas-.git"
+                  target="_blank"
+                  class="btn project__btn--secondary"
+                  type="button"
+                  aria-label="Link to Github Repository for Atlas Behavioral Health & Wellness"
+                  rel="noopener"
+                  >See Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </article>  
+      </section>  
+
+      <!-- about section -->
+      <section class="about" id="about">
+        <section class="center">
+          <h2 class="section__title">About Me</h2>
+          <article class="about__container">
+            <div class="about__bio">
+              <h3 class="skills_bio">Bio</h3>
+              <p>
+                I created a
+                <a
+                  href="https://www.youtube.com/channel/UCOGjYAACGwNLzYcTpXnvZ_Q"
+                  class="about__link"
+                  target="_blank"
+                  rel="noopener"
+                  >YouTube</a
+                >
+                channel to document my journey, and share demo videos of projects I
+                have worked on.  When i'm not in front of my laptop you can find me getting my 10,000 steps in for the day, trying a new restaurant, or listening to music!
+              </p>
+            </div>
+            <div class="about__skills">
+              <h3 class="skills__title">Skills</h3>
+              <div class="about__skilllist">
+                <div>
+                  <i class="fab fa-html5" alt="Html5 logo"></i>
+                  <p>HTML 5</p>
+                </div>
+                <div>
+                  <i class="fab fa-css3-alt" alt="Css3 logo"></i>
+                  <p>CSS3</p>
+                </div>
+                <div>
+                  <i class="fab fa-js-square" alt="JavaScript logo"></i>
+                  <p>JavaScript</p>
+                </div>
+                <div>
+                  <i class="fab fa-git" alt="Git logo"></i>
+                  <p>Git</p>
+                </div>
+                <div>
+                  <i class="fab fa-github" alt="Github logo"></i>
+                  <p>Github</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      
+    </main>
+    <footer class="footer">
+      <small
+        >&copy <span id="date"></span> Coded & Created By: Fatemah Zahrah</small
+      >
+    </footer>
+  </body>
+</html>
+
+
+
